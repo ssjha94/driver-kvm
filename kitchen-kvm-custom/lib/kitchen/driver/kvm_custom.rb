@@ -30,6 +30,9 @@ module Kitchen
 
         run_command(cmd)
         ip_address = fetch_vm_ip(vm_name)
+        if ip_address.nil?
+          raise "Failed to fetch VM IP address. Check 'virsh domifaddr #{vm_name}'."
+        end
         state[:hostname] = ip_address
         state[:username] = config[:ssh_user]
         state[:ssh_key] = config[:ssh_key]
@@ -44,9 +47,15 @@ module Kitchen
       end
 
       def fetch_vm_ip(vm_name)
-        output = `virsh domifaddr #{vm_name}`
-        match = output.match(/\b(\d+\.\d+\.\d+\.\d+)\b/)
-        match ? match[1] : nil
+        10.times do
+          output = `virsh domifaddr #{vm_name}`
+          match = output.match(/\b(\d+\.\d+\.\d+\.\d+)\b/)
+          return match[1] if match
+
+          puts "Waiting for VM IP assignment..."
+          sleep 5
+        end
+        nil
       end
     end
   end
