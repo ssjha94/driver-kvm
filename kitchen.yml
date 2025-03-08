@@ -1,0 +1,20 @@
+---
+driver:
+  name: kvm_custom
+  memory: 2048
+  cpus: 2
+  image: "/var/lib/libvirt/images/ubuntu-vm1.qcow2"
+  cdrom: "/var/lib/libvirt/images/ubuntu-20.04.iso"
+  network: "default"
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-20.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[my_cookbook::default]
+

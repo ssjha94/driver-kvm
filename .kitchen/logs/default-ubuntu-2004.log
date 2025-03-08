@@ -1,0 +1,6 @@
+I, [2025-03-08T08:13:01.080615 #7154]  INFO -- default-ubuntu-2004: -----> Destroying <default-ubuntu-2004>...
+I, [2025-03-08T08:13:01.422767 #7154]  INFO -- default-ubuntu-2004: Domain 'default-ubuntu-2004' destroyed
+I, [2025-03-08T08:13:01.422820 #7154]  INFO -- default-ubuntu-2004: 
+I, [2025-03-08T08:13:01.434362 #7154]  INFO -- default-ubuntu-2004: Domain 'default-ubuntu-2004' has been undefined
+I, [2025-03-08T08:13:01.434394 #7154]  INFO -- default-ubuntu-2004: 
+I, [2025-03-08T08:13:01.435341 #7154]  INFO -- default-ubuntu-2004: Finished destroying <default-ubuntu-2004> (0m0.35s).
