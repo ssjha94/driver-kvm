@@ -3,18 +3,27 @@ driver:
   name: kvm_custom
   memory: 2048
   cpus: 2
-  image: "/var/lib/libvirt/images/ubuntu-vm1.qcow2"
-  cdrom: "/var/lib/libvirt/images/ubuntu-20.04.iso"
-  network: "default"
+  image: /var/lib/libvirt/images/ubuntu-vm.qcow2
+  cdrom: /var/lib/libvirt/images/ubuntu-20.04.iso
+  network: default
+  graphics: vnc
+  ssh_user: ubuntu
+  ssh_key: ~/.ssh/id_rsa
+
+transport:
+  name: ssh
+  username: ubuntu
+  ssh_key: ~/.ssh/id_rsa
 
 provisioner:
   name: chef_zero
+  product_name: chef
 
 platforms:
-  - name: ubuntu-20.04
+  - name: ubuntu-22.04
 
 suites:
   - name: default
     run_list:
-      - recipe[my_cookbook::default]
+      - recipe[test::default]
 

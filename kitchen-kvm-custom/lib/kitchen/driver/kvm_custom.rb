@@ -1,16 +1,17 @@
-require "kitchen"
-require "kitchen/driver/base"
-require "open3"
+require 'kitchen'
+require 'open3'
 
 module Kitchen
   module Driver
     class KvmCustom < Kitchen::Driver::Base
       default_config :memory, 1024
       default_config :cpus, 1
-      default_config :image, "/var/lib/libvirt/images/ubuntu-vm1.qcow2"
-      default_config :cdrom, "/var/lib/libvirt/images/ubuntu-20.04.iso"
-      default_config :network, "default"
-      default_config :graphics, "vnc"
+      default_config :image, '/var/lib/libvirt/images/ubuntu-vm1.qcow2'
+      default_config :cdrom, '/var/lib/libvirt/images/ubuntu-20.04.iso'
+      default_config :network, 'default'
+      default_config :graphics, 'vnc'
+      default_config :ssh_user, 'ubuntu'
+      default_config :ssh_key, '~/.ssh/id_rsa'
 
       def create(state)
         vm_name = config[:instance_name] || instance.name
@@ -23,11 +24,15 @@ module Kitchen
           --cdrom=#{config[:cdrom]} \
           --network=#{config[:network]} \
           --graphics=#{config[:graphics]} \
+          --disk path=/var/lib/libvirt/images/cloud-init.iso,device=cdrom \
           --noautoconsole
         EOC
 
         run_command(cmd)
-        state[:hostname] = vm_name
+        ip_address = fetch_vm_ip(vm_name)
+        state[:hostname] = ip_address
+        state[:username] = config[:ssh_user]
+        state[:ssh_key] = config[:ssh_key]
       end
 
       def destroy(state)
@@ -36,6 +41,12 @@ module Kitchen
 
         run_command("virsh destroy #{vm_name}")
         run_command("virsh undefine #{vm_name}")
+      end
+
+      def fetch_vm_ip(vm_name)
+        output = `virsh domifaddr #{vm_name}`
+        match = output.match(/\b(\d+\.\d+\.\d+\.\d+)\b/)
+        match ? match[1] : nil
       end
     end
   end
