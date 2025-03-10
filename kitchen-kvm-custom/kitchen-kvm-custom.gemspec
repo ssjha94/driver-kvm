@@ -14,5 +14,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "test-kitchen", ">= 3.0"
+  spec.add_dependency "chef"
+  spec.add_dependency "chef-config"
+  spec.add_dependency "kitchen-sync"
 end
 

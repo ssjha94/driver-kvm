@@ -8,8 +8,8 @@ transport:
   ssh_key: ~/.ssh/id_rsa
 
 provisioner:
-  name: chef_solo
-  cookbook_path: /home/ubuntu/cookbooks
+  name: chef_zero
+  policyfile_path: /home/ubuntu/cookbooks/test/Policyfile.rb
 
 platforms:
   - name: ubuntu-20.04

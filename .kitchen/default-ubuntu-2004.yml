@@ -1,6 +1,6 @@
 ---
-hostname: 192.168.122.2
+hostname: 192.168.122.84
 username: ubuntu
 ssh_key: "~/.ssh/id_rsa"
-last_action: create
-last_error: Kitchen::ActionFailed
+last_action: converge
+last_error: 
