@@ -39,7 +39,7 @@ module Kitchen
       end
 
       def destroy(state)
-        vm_name = state[:hostname]
+        vm_name = config[:instance_name] || instance.name
         return if vm_name.nil?
 
         run_command("virsh destroy #{vm_name}")

@@ -1,0 +1,157 @@
+I, [2025-03-10T12:44:55.055988 #37882]  INFO -- default-ubuntu-2004: -----> Creating <default-ubuntu-2004>...
+I, [2025-03-10T12:44:55.602571 #37882]  INFO -- default-ubuntu-2004: WARNING  Requested memory 1024 MiB is less than the recommended 2048 MiB for OS ubuntu20.04
+I, [2025-03-10T12:44:56.478253 #37882]  INFO -- default-ubuntu-2004: 
+I, [2025-03-10T12:44:56.478307 #37882]  INFO -- default-ubuntu-2004: Starting install...
+I, [2025-03-10T12:44:56.478321 #37882]  INFO -- default-ubuntu-2004: Creating domain...                                          |    0 B  00:00     
+I, [2025-03-10T12:44:56.478821 #37882]  INFO -- default-ubuntu-2004: 
+I, [2025-03-10T12:44:56.478836 #37882]  INFO -- default-ubuntu-2004: Domain is still running. Installation may be in progress.
+I, [2025-03-10T12:44:56.478846 #37882]  INFO -- default-ubuntu-2004: You can reconnect to the console to complete the installation process.
+I, [2025-03-10T12:44:56.545745 #37882]  INFO -- default-ubuntu-2004: Waiting for VM IP assignment...
+I, [2025-03-10T12:45:01.575475 #37882]  INFO -- default-ubuntu-2004: Waiting for VM IP assignment...
+I, [2025-03-10T12:45:06.604160 #37882]  INFO -- default-ubuntu-2004: Waiting for VM IP assignment...
+I, [2025-03-10T12:45:11.631726 #37882]  INFO -- default-ubuntu-2004: Waiting for VM IP assignment...
+I, [2025-03-10T12:45:16.657636 #37882]  INFO -- default-ubuntu-2004: Waiting for VM IP assignment...
+I, [2025-03-10T12:45:21.683140 #37882]  INFO -- default-ubuntu-2004: Waiting for VM IP assignment...
+I, [2025-03-10T12:45:26.710381 #37882]  INFO -- default-ubuntu-2004: Finished creating <default-ubuntu-2004> (0m31.65s).
+I, [2025-03-10T12:45:26.710488 #37882]  INFO -- default-ubuntu-2004: -----> Converging <default-ubuntu-2004>...
+I, [2025-03-10T12:45:26.775640 #37882]  INFO -- default-ubuntu-2004: Preparing files for transfer
+I, [2025-03-10T12:45:26.775714 #37882]  INFO -- default-ubuntu-2004: Preparing dna.json
+I, [2025-03-10T12:45:26.777796 #37882]  INFO -- default-ubuntu-2004: Policyfile, Berksfile, cookbooks/, or metadata.rb not found so Chef Infra Client will run, but do nothing. Is this intended?
+I, [2025-03-10T12:45:26.777907 #37882]  INFO -- default-ubuntu-2004: Removing non-cookbook files before transfer
+I, [2025-03-10T12:45:26.778322 #37882]  INFO -- default-ubuntu-2004: Preparing solo.rb
+I, [2025-03-10T12:45:28.151990 #37882]  INFO -- default-ubuntu-2004: -----> Installing Chef install only if missing package
+I, [2025-03-10T12:45:28.156505 #37882]  INFO -- default-ubuntu-2004: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2025-03-10T12:45:28.157106 #37882]  INFO -- default-ubuntu-2004: Trying wget...
+I, [2025-03-10T12:45:28.224597 #37882]  INFO -- default-ubuntu-2004: Download complete.
+I, [2025-03-10T12:45:28.249671 #37882]  INFO -- default-ubuntu-2004: ubuntu 20.04 x86_64
+I, [2025-03-10T12:45:28.251325 #37882]  INFO -- default-ubuntu-2004: Getting information for chef stable  for ubuntu...
+I, [2025-03-10T12:45:28.251485 #37882]  INFO -- default-ubuntu-2004: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=20.04&m=x86_64
+I, [2025-03-10T12:45:28.251624 #37882]  INFO -- default-ubuntu-2004:   to file /tmp/install.sh.1874/metadata.txt
+I, [2025-03-10T12:45:28.251763 #37882]  INFO -- default-ubuntu-2004: trying wget...
+I, [2025-03-10T12:45:28.268903 #37882]  INFO -- default-ubuntu-2004: sha1	d340c180bdb82c3b67145fdb0cd3ea38b1cd8308
+I, [2025-03-10T12:45:28.269177 #37882]  INFO -- default-ubuntu-2004: sha256	8c0b4ede4d6996355297ae0c8423f34a7e5387e7bbf477aaca7a00a87effff6b
+I, [2025-03-10T12:45:28.269407 #37882]  INFO -- default-ubuntu-2004: url	https://packages.chef.io/files/stable/chef/18.6.2/ubuntu/20.04/chef_18.6.2-1_amd64.deb
+I, [2025-03-10T12:45:28.273342 #37882]  INFO -- default-ubuntu-2004: version	18.6.2
+I, [2025-03-10T12:45:28.273545 #37882]  INFO -- default-ubuntu-2004: downloaded metadata file looks valid...
+I, [2025-03-10T12:45:28.290982 #37882]  INFO -- default-ubuntu-2004: downloading https://packages.chef.io/files/stable/chef/18.6.2/ubuntu/20.04/chef_18.6.2-1_amd64.deb
+I, [2025-03-10T12:45:28.291173 #37882]  INFO -- default-ubuntu-2004:   to file /tmp/install.sh.1874/chef_18.6.2-1_amd64.deb
+I, [2025-03-10T12:45:28.291422 #37882]  INFO -- default-ubuntu-2004: trying wget...
+I, [2025-03-10T12:45:28.460185 #37882]  INFO -- default-ubuntu-2004: Comparing checksum with sha256sum...
+I, [2025-03-10T12:45:28.817820 #37882]  INFO -- default-ubuntu-2004: 
+I, [2025-03-10T12:45:28.818020 #37882]  INFO -- default-ubuntu-2004: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2025-03-10T12:45:28.818037 #37882]  INFO -- default-ubuntu-2004: 
+I, [2025-03-10T12:45:28.818049 #37882]  INFO -- default-ubuntu-2004: You are installing a package without a version pin.  If you are installing
+I, [2025-03-10T12:45:28.818061 #37882]  INFO -- default-ubuntu-2004: on production servers via an automated process this is DANGEROUS and you will
+I, [2025-03-10T12:45:28.818071 #37882]  INFO -- default-ubuntu-2004: be upgraded without warning on new releases, even to new major releases.
+I, [2025-03-10T12:45:28.818081 #37882]  INFO -- default-ubuntu-2004: Letting the version float is only appropriate in test, development or
+I, [2025-03-10T12:45:28.818090 #37882]  INFO -- default-ubuntu-2004: CI/CD environments.
+I, [2025-03-10T12:45:28.818098 #37882]  INFO -- default-ubuntu-2004: 
+I, [2025-03-10T12:45:28.818107 #37882]  INFO -- default-ubuntu-2004: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2025-03-10T12:45:28.818119 #37882]  INFO -- default-ubuntu-2004: 
+I, [2025-03-10T12:45:28.818128 #37882]  INFO -- default-ubuntu-2004: Installing chef 
+I, [2025-03-10T12:45:28.818296 #37882]  INFO -- default-ubuntu-2004: installing with dpkg...
+I, [2025-03-10T12:45:28.921843 #37882]  INFO -- default-ubuntu-2004: Selecting previously unselected package chef.
+I, [2025-03-10T12:45:31.198822 #37882]  INFO -- default-ubuntu-2004: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35220 files and directories currently installed.)
+I, [2025-03-10T12:45:31.201162 #37882]  INFO -- default-ubuntu-2004: Preparing to unpack .../chef_18.6.2-1_amd64.deb ...
+I, [2025-03-10T12:45:31.205227 #37882]  INFO -- default-ubuntu-2004: Unpacking chef (18.6.2-1) ...
+I, [2025-03-10T12:45:37.745876 #37882]  INFO -- default-ubuntu-2004: Setting up chef (18.6.2-1) ...
+I, [2025-03-10T12:45:37.813183 #37882]  INFO -- default-ubuntu-2004: Thank you for installing Chef Infra Client! For help getting started visit https://learn.chef.io
+I, [2025-03-10T12:45:37.883484 #37882]  INFO -- default-ubuntu-2004: Transferring files to <default-ubuntu-2004>
+I, [2025-03-10T12:45:39.913480 #37882]  INFO -- default-ubuntu-2004: +---------------------------------------------+
+I, [2025-03-10T12:45:39.913775 #37882]  INFO -- default-ubuntu-2004: [32m✔[0m 2 product licenses accepted.
+I, [2025-03-10T12:45:39.913916 #37882]  INFO -- default-ubuntu-2004: +---------------------------------------------+
+I, [2025-03-10T12:45:40.321459 #37882]  INFO -- default-ubuntu-2004: Chef Infra Client, version 18.6.2
+I, [2025-03-10T12:45:40.321688 #37882]  INFO -- default-ubuntu-2004: Patents: https://www.chef.io/patents
+I, [2025-03-10T12:45:40.321866 #37882]  INFO -- default-ubuntu-2004: Infra Phase starting
+I, [2025-03-10T12:45:42.453311 #37882]  INFO -- default-ubuntu-2004: Creating a new client identity for default-ubuntu-2004 using the validator key.
+I, [2025-03-10T12:45:42.783597 #37882]  INFO -- default-ubuntu-2004: Resolving cookbooks for run list: ["test::default"]
+I, [2025-03-10T12:45:42.791680 #37882]  INFO -- default-ubuntu-2004: 
+I, [2025-03-10T12:45:42.791871 #37882]  INFO -- default-ubuntu-2004: ================================================================================
+I, [2025-03-10T12:45:42.792025 #37882]  INFO -- default-ubuntu-2004: Error Resolving Cookbooks for Run List:
+I, [2025-03-10T12:45:42.792147 #37882]  INFO -- default-ubuntu-2004: ================================================================================
+I, [2025-03-10T12:45:42.792217 #37882]  INFO -- default-ubuntu-2004: 
+I, [2025-03-10T12:45:42.792330 #37882]  INFO -- default-ubuntu-2004: Missing Cookbooks:
+I, [2025-03-10T12:45:42.792482 #37882]  INFO -- default-ubuntu-2004: ------------------
+I, [2025-03-10T12:45:42.792631 #37882]  INFO -- default-ubuntu-2004: No such cookbook: test
+I, [2025-03-10T12:45:42.792698 #37882]  INFO -- default-ubuntu-2004: 
+I, [2025-03-10T12:45:42.792815 #37882]  INFO -- default-ubuntu-2004: Expanded Run List:
+I, [2025-03-10T12:45:42.792931 #37882]  INFO -- default-ubuntu-2004: ------------------
+I, [2025-03-10T12:45:42.793043 #37882]  INFO -- default-ubuntu-2004: * test::default
+I, [2025-03-10T12:45:42.793107 #37882]  INFO -- default-ubuntu-2004: 
+I, [2025-03-10T12:45:42.793216 #37882]  INFO -- default-ubuntu-2004: System Info:
+I, [2025-03-10T12:45:42.793362 #37882]  INFO -- default-ubuntu-2004: ------------
+I, [2025-03-10T12:45:42.793478 #37882]  INFO -- default-ubuntu-2004: chef_version=18.6.2
+I, [2025-03-10T12:45:42.793590 #37882]  INFO -- default-ubuntu-2004: platform=ubuntu
+I, [2025-03-10T12:45:42.793701 #37882]  INFO -- default-ubuntu-2004: platform_version=20.04
+I, [2025-03-10T12:45:42.793821 #37882]  INFO -- default-ubuntu-2004: ruby=ruby 3.1.6p260 (2024-05-29 revision a777087be6) [x86_64-linux]
+I, [2025-03-10T12:45:42.793938 #37882]  INFO -- default-ubuntu-2004: program_name=/opt/chef/bin/chef-solo
+I, [2025-03-10T12:45:42.794076 #37882]  INFO -- default-ubuntu-2004: executable=/opt/chef/bin/chef-solo
+I, [2025-03-10T12:45:42.794144 #37882]  INFO -- default-ubuntu-2004: 
+I, [2025-03-10T12:45:42.796899 #37882]  INFO -- default-ubuntu-2004: 
+I, [2025-03-10T12:45:42.797047 #37882]  INFO -- default-ubuntu-2004: Running handlers:
+I, [2025-03-10T12:45:42.797199 #37882]  INFO -- default-ubuntu-2004: [2025-03-10T12:45:42+00:00] ERROR: Running exception handlers
+I, [2025-03-10T12:45:42.797326 #37882]  INFO -- default-ubuntu-2004: Running handlers complete
+I, [2025-03-10T12:45:42.797452 #37882]  INFO -- default-ubuntu-2004: [2025-03-10T12:45:42+00:00] ERROR: Exception handlers complete
+I, [2025-03-10T12:45:42.797571 #37882]  INFO -- default-ubuntu-2004: Infra Phase failed. 0 resources updated in 02 seconds
+I, [2025-03-10T12:45:43.225568 #37882]  INFO -- default-ubuntu-2004: [2025-03-10T12:45:42+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2025-03-10T12:45:43.225809 #37882]  INFO -- default-ubuntu-2004: [2025-03-10T12:45:42+00:00] FATAL: ---------------------------------------------------------------------------------------
+I, [2025-03-10T12:45:43.225955 #37882]  INFO -- default-ubuntu-2004: [2025-03-10T12:45:42+00:00] FATAL: PLEASE PROVIDE THE CONTENTS OF THE stacktrace.out FILE (above) IF YOU FILE A BUG REPORT
+I, [2025-03-10T12:45:43.226081 #37882]  INFO -- default-ubuntu-2004: [2025-03-10T12:45:42+00:00] FATAL: ---------------------------------------------------------------------------------------
+I, [2025-03-10T12:45:43.226231 #37882]  INFO -- default-ubuntu-2004: [2025-03-10T12:45:42+00:00] FATAL: Net::HTTPClientException: 412 "Precondition Failed"
+E, [2025-03-10T12:45:43.238131 #37882] ERROR -- default-ubuntu-2004: Converge failed on instance <default-ubuntu-2004>.
+E, [2025-03-10T12:45:43.238212 #37882] ERROR -- default-ubuntu-2004: ------Exception-------
+E, [2025-03-10T12:45:43.238222 #37882] ERROR -- default-ubuntu-2004: Class: Kitchen::ActionFailed
+E, [2025-03-10T12:45:43.238229 #37882] ERROR -- default-ubuntu-2004: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json 
+']
+E, [2025-03-10T12:45:43.238239 #37882] ERROR -- default-ubuntu-2004: ----------------------
+E, [2025-03-10T12:45:43.238245 #37882] ERROR -- default-ubuntu-2004: ------Backtrace-------
+E, [2025-03-10T12:45:43.238254 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/provisioner/base.rb:99:in `rescue in call'
+E, [2025-03-10T12:45:43.238260 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/provisioner/base.rb:98:in `call'
+E, [2025-03-10T12:45:43.238266 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2025-03-10T12:45:43.238271 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:560:in `block in synchronize_or_call'
+E, [2025-03-10T12:45:43.238277 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:558:in `synchronize'
+E, [2025-03-10T12:45:43.238283 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:558:in `synchronize_or_call'
+E, [2025-03-10T12:45:43.238289 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:524:in `block in action'
+E, [2025-03-10T12:45:43.238294 #37882] ERROR -- default-ubuntu-2004: /usr/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2025-03-10T12:45:43.238300 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:523:in `action'
+E, [2025-03-10T12:45:43.238306 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2025-03-10T12:45:43.238314 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2025-03-10T12:45:43.238320 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2025-03-10T12:45:43.238325 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2025-03-10T12:45:43.238331 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:390:in `each'
+E, [2025-03-10T12:45:43.238337 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2025-03-10T12:45:43.238343 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:139:in `converge'
+E, [2025-03-10T12:45:43.238348 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/command.rb:195:in `public_send'
+E, [2025-03-10T12:45:43.238354 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2025-03-10T12:45:43.238360 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2025-03-10T12:45:43.238365 #37882] ERROR -- default-ubuntu-2004: ----End Backtrace-----
+E, [2025-03-10T12:45:43.238373 #37882] ERROR -- default-ubuntu-2004: ---Nested Exception---
+E, [2025-03-10T12:45:43.238379 #37882] ERROR -- default-ubuntu-2004: Class: Kitchen::Transport::SshFailed
+E, [2025-03-10T12:45:43.238387 #37882] ERROR -- default-ubuntu-2004: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json 
+']
+E, [2025-03-10T12:45:43.238393 #37882] ERROR -- default-ubuntu-2004: ----------------------
+E, [2025-03-10T12:45:43.238398 #37882] ERROR -- default-ubuntu-2004: ------Backtrace-------
+E, [2025-03-10T12:45:43.238404 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/provisioner/base.rb:99:in `rescue in call'
+E, [2025-03-10T12:45:43.238410 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/provisioner/base.rb:98:in `call'
+E, [2025-03-10T12:45:43.238415 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2025-03-10T12:45:43.238421 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:560:in `block in synchronize_or_call'
+E, [2025-03-10T12:45:43.238427 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:558:in `synchronize'
+E, [2025-03-10T12:45:43.238435 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:558:in `synchronize_or_call'
+E, [2025-03-10T12:45:43.238441 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:524:in `block in action'
+E, [2025-03-10T12:45:43.238447 #37882] ERROR -- default-ubuntu-2004: /usr/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2025-03-10T12:45:43.238452 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:523:in `action'
+E, [2025-03-10T12:45:43.238458 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2025-03-10T12:45:43.238463 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2025-03-10T12:45:43.238469 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2025-03-10T12:45:43.238475 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2025-03-10T12:45:43.238481 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:390:in `each'
+E, [2025-03-10T12:45:43.238488 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2025-03-10T12:45:43.238494 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/instance.rb:139:in `converge'
+E, [2025-03-10T12:45:43.238499 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/command.rb:195:in `public_send'
+E, [2025-03-10T12:45:43.238505 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2025-03-10T12:45:43.238511 #37882] ERROR -- default-ubuntu-2004: /home/ubuntu/kitchen-kvm-test/.bundle/ruby/3.0.0/gems/test-kitchen-3.5.1/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2025-03-10T12:45:43.238519 #37882] ERROR -- default-ubuntu-2004: ----End Backtrace-----

@@ -1,0 +1,6 @@
+---
+hostname: 192.168.122.2
+username: ubuntu
+ssh_key: "~/.ssh/id_rsa"
+last_action: create
+last_error: Kitchen::ActionFailed
