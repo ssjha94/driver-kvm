@@ -5,11 +5,7 @@ driver:
 transport:
   name: ssh
   username: ubuntu
-  ssh_key: ~/.ssh/id_rsa
-
-provisioner:
-  name: chef_zero
-  policyfile_path: /home/ubuntu/cookbooks/test/Policyfile.rb
+  ssh_key: ~/.ssh/id_rsa  # Optional
 
 platforms:
   - name: ubuntu-20.04
@@ -18,5 +14,7 @@ suites:
   - name: default
     run_list:
       - recipe[test::default]
-    attributes:
+
+verifier:
+  name: inspec
 
